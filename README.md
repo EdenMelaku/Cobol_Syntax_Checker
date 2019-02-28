@@ -20,12 +20,13 @@ the input.cbl file is a simple cobol program used for testing. you can use your 
 to run the program make sure you have installed flex , yacc and gcc on your computer.
 
 open a terminal in your project directory and run the following commands 
-
+```
 bison  –d coco.y // that generate coco.tab.h and  coco.tab.c 
 
 flex  lexfinal.l	// generate lex.yy.c
 
 gcc lex.yy.c  coco.tab.c  –o output 	//run both c file using the c compiler that generate the executable file in output.
+```
 
 finally execute output
 
